@@ -31,7 +31,7 @@ This repository contains a simple Node.js API and a React client used for a user
 
 6. For ingress controler folow below processs require MetelLB deployed on on prime setup
 
-'''bash
+```bash
 helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 helm repo update
 
@@ -41,7 +41,6 @@ helm install nginx-ingress ingress-nginx/ingress-nginx \
   --set controller.ingressClassResource.controllerValue="k8s.io/ingress-nginx" \
   --set controller.service.type=LoadBalancer \
   --set controller.service.externalTrafficPolicy=Local
-
-  '''
+ ```
 
 The client now displays an animated banner welcoming you to **DevOps Shack**.
